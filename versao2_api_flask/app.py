@@ -24,6 +24,7 @@ from datetime import date, datetime, timedelta
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
+app.json.ensure_ascii = False
 
 # ---------------------------------------------------------
 # 1. DADOS EM MEMÓRIA (sem banco de dados)
